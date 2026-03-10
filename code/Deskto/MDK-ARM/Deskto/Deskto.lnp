@@ -1,0 +1,24 @@
+--cpu=Cortex-M4.fp.sp
+"deskto\startup_stm32f407xx.o"
+"deskto\main.o"
+"deskto\gpio.o"
+"deskto\stm32f4xx_it.o"
+"deskto\stm32f4xx_hal_msp.o"
+"deskto\stm32f4xx_hal_rcc.o"
+"deskto\stm32f4xx_hal_rcc_ex.o"
+"deskto\stm32f4xx_hal_flash.o"
+"deskto\stm32f4xx_hal_flash_ex.o"
+"deskto\stm32f4xx_hal_flash_ramfunc.o"
+"deskto\stm32f4xx_hal_gpio.o"
+"deskto\stm32f4xx_hal_dma_ex.o"
+"deskto\stm32f4xx_hal_dma.o"
+"deskto\stm32f4xx_hal_pwr.o"
+"deskto\stm32f4xx_hal_pwr_ex.o"
+"deskto\stm32f4xx_hal_cortex.o"
+"deskto\stm32f4xx_hal.o"
+"deskto\stm32f4xx_hal_exti.o"
+"deskto\system_stm32f4xx.o"
+--strict --scatter "Deskto\Deskto.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Deskto.map" -o Deskto\Deskto.axf
